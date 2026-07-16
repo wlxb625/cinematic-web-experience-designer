@@ -1,0 +1,27 @@
+media_assets:
+  - id: media-01
+    scene_id: scene-01
+    type: "image | video | sequence | 3d | shader | texture"
+    narrative_role: ""
+    source_status: "existing | generate | shoot | render | placeholder"
+    aspect_ratio:
+      desktop: ""
+      mobile: ""
+    focal_point:
+      desktop: "x% y%"
+      mobile: "x% y%"
+    safe_text_area:
+      desktop: ""
+      mobile: ""
+    crop_strategy:
+      desktop: ""
+      mobile: ""
+    color_grade: ""
+    loop_behavior: "none | seamless | ping-pong | scroll-controlled"
+    loading:
+      priority: "critical | deferred | lazy"
+      poster: ""
+      preload: "none | metadata | auto"
+    performance_fallback: ""
+    reduced_motion_fallback: ""
+    alt_or_equivalent_content: ""
