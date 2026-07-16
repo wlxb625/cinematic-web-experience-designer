@@ -1,0 +1,50 @@
+experience:
+  name: ""
+  experience_type: "brand | product-moment | daily-product"
+  visual_concept: ""
+  primary_subject: ""
+  emotional_arc:
+    start: ""
+    middle: ""
+    climax: ""
+    end: ""
+
+scenes:
+  - id: scene-01
+    name: ""
+    purpose: ""
+    emotion: ""
+    visual_subject: ""
+    supporting_content: []
+    spatial_composition:
+      background: ""
+      midground: ""
+      foreground: ""
+      interaction_layer: ""
+    media_refs: []
+    scroll_behavior:
+      mode: "natural | progressive-reveal | pinned-transform | camera-journey | video-scrub | image-sequence | horizontal-journey | state-reorganization"
+      trigger: "top top"
+      end: "+=220%"
+      pin: false
+      scrub_seconds: 0
+      desktop_scroll_vh: 0
+      mobile_scroll_vh: 0
+    continuity:
+      receives_from_previous: ""
+      preserves: ""
+      transforms: ""
+      hands_to_next: ""
+    entering_motion: ""
+    holding_motion: ""
+    user_interaction: ""
+    exit_transition: ""
+    desktop_direction: ""
+    mobile_direction: ""
+    reduced_motion: ""
+    low_performance_fallback: ""
+    validation:
+      progress_frames: [0, 0.25, 0.5, 0.75, 1]
+      desktop_recording: true
+      mobile_recording: true
+      reverse_scroll_test: true
