@@ -1,0 +1,94 @@
+scene_id: scene-01
+master_driver: "scroll | time | pointer | state | hybrid"
+state_source: "normalized progress p in [0,1]"
+
+scroll_choreography:
+  trigger_selector: "[data-scene='scene-01']"
+  start: "top top"
+  end: "+=220%"
+  desktop_scroll_vh: 220
+  mobile_scroll_vh: 150
+  pin: true
+  pin_spacing: true
+  scrub_seconds: 0.8
+  anticipate_pin: 1
+  snap: false
+  normalize_progress: true
+  preserve_native_scroll: true
+  touch_behavior: "shorter pinned sequence; no hover dependency"
+  fast_scroll_behavior: "skip no essential information; timeline remains reversible"
+  reverse_scroll_behavior: "restore every visual state without discontinuity"
+
+continuity:
+  receives_from_previous: ""
+  preserves: ""
+  transforms: ""
+  hands_to_next: ""
+
+media_sync:
+  type: "none | video | image-sequence | webgl-camera | shader | hybrid"
+  source: ""
+  progress_mapping: ""
+  preload_before_viewport_px: 800
+  offscreen_behavior: "pause and release optional caches"
+  seek_strategy: "requestAnimationFrame merged updates"
+  fallback: ""
+
+timeline:
+  - range: "0%-10%"
+    intention: "prewarm and receive previous scene"
+    changes:
+      background: ""
+      subject: ""
+      typography: ""
+      navigation: ""
+      media: ""
+      interaction: ""
+  - range: "10%-28%"
+    intention: "establish environment and reveal subject"
+    changes: {}
+  - range: "28%-52%"
+    intention: "perform the core transformation"
+    changes: {}
+  - range: "52%-72%"
+    intention: "reveal information through the transformation"
+    changes: {}
+  - range: "72%-90%"
+    intention: "reach the visual or conceptual result"
+    changes: {}
+  - range: "90%-100%"
+    intention: "resolve and hand state to the next scene"
+    changes: {}
+
+motion_budgets:
+  max_pointer_parallax_px: 12
+  max_mobile_parallax_px: 4
+  max_blur_px: 24
+  max_simultaneous_animated_layers: 6
+  default_ui_duration_ms: "140-240"
+  page_transition_ms: "220-420"
+  allow_continuous_motion: false
+  allow_scroll_jacking: false
+  max_heavy_pinned_scenes_per_page: 3
+
+implementation:
+  preferred_technology: "CSS sticky | GSAP ScrollTrigger | video scrub | canvas sequence | WebGL"
+  one_master_timeline_per_scene: true
+  react_state_per_frame: false
+  cleanup_on_unmount: true
+  refresh_after_fonts_and_media: true
+  debug_progress_overlay: true
+
+reduced_motion:
+  pin_behavior: "remove or shorten pin"
+  replacement: "static key states with normal document flow"
+  information_equivalence: ""
+
+validation:
+  capture_progress: [0, 0.25, 0.5, 0.75, 1]
+  record_desktop_scroll: true
+  record_mobile_scroll: true
+  test_fast_scroll: true
+  test_reverse_scroll: true
+  test_mid_progress_pause: true
+  test_route_cleanup: true
