@@ -1,0 +1,187 @@
+.memory-scroll-scene {
+  --scene-progress: 0;
+  position: relative;
+  min-height: 100svh;
+  overflow: clip;
+  color: rgba(249, 245, 238, 0.96);
+  background:
+    radial-gradient(circle at 62% 47%, rgba(223, 171, 106, 0.13), transparent 26%),
+    linear-gradient(180deg, #071019, #080b11 72%, #101016);
+}
+
+.memory-scroll-scene__ambient {
+  position: absolute;
+  inset: -15%;
+  background-image:
+    radial-gradient(circle at 52% 42%, rgba(144, 164, 255, 0.12), transparent 20%),
+    radial-gradient(circle at 68% 54%, rgba(243, 180, 105, 0.11), transparent 24%);
+  transform: scale(calc(1 + var(--scene-progress) * 0.08));
+  pointer-events: none;
+}
+
+.memory-scroll-scene__copy {
+  position: absolute;
+  z-index: 2;
+  top: 23%;
+  left: max(6vw, 48px);
+  width: min(38rem, 42vw);
+}
+
+.memory-scroll-scene__eyebrow,
+.memory-scroll-scene__copy p,
+.memory-scroll-scene__next p {
+  color: rgba(249, 245, 238, 0.62);
+}
+
+.memory-scroll-scene h1 {
+  max-width: 12ch;
+  margin: 14px 0 22px;
+  font-size: clamp(3rem, 5.8vw, 6.8rem);
+  font-weight: 450;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.memory-scroll-scene__copy > p:last-child {
+  max-width: 30rem;
+  line-height: 1.8;
+}
+
+.memory-scroll-scene__stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.memory-scroll-scene__core {
+  position: relative;
+  z-index: 3;
+  width: clamp(170px, 20vw, 340px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 224, 181, 0.35);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(255, 240, 214, 0.98) 0 2%, rgba(238, 176, 102, 0.7) 4%, transparent 18%),
+    conic-gradient(from 20deg, transparent, rgba(119, 147, 255, 0.34), transparent, rgba(235, 173, 99, 0.42), transparent);
+  box-shadow: 0 0 100px rgba(231, 169, 98, 0.17);
+}
+
+.memory-scroll-scene__core span {
+  position: absolute;
+  inset: 19%;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: inherit;
+}
+
+.memory-scroll-scene__node {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 74px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  color: rgba(255, 246, 231, 0.82);
+  background: rgba(10, 15, 24, 0.68);
+  backdrop-filter: blur(14px);
+}
+
+.memory-scroll-scene__cards {
+  position: absolute;
+  z-index: 5;
+  right: 5vw;
+  bottom: 10vh;
+  display: grid;
+  width: min(340px, 28vw);
+  gap: 12px;
+}
+
+.memory-scroll-scene__cards article {
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(9, 13, 20, 0.76);
+  backdrop-filter: blur(16px);
+}
+
+.memory-scroll-scene__cards small {
+  color: rgba(239, 179, 108, 0.72);
+}
+
+.memory-scroll-scene__cards p {
+  margin: 6px 0 0;
+}
+
+.memory-scroll-scene__next {
+  position: absolute;
+  z-index: 6;
+  left: 9vw;
+  bottom: 11vh;
+}
+
+.memory-scroll-scene__next h2 {
+  max-width: 15ch;
+  margin: 8px 0 0;
+  font-size: clamp(2rem, 4vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.memory-scroll-scene__debug {
+  position: absolute;
+  z-index: 20;
+  top: 18px;
+  right: 18px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  font: 12px/1.2 ui-monospace, monospace;
+}
+
+@media (max-width: 720px) {
+  .memory-scroll-scene__copy {
+    top: 9svh;
+    left: 24px;
+    width: calc(100% - 48px);
+  }
+
+  .memory-scroll-scene h1 {
+    max-width: 9ch;
+    font-size: clamp(2.8rem, 14vw, 4.8rem);
+  }
+
+  .memory-scroll-scene__stage {
+    transform: translateY(10svh) scale(0.72);
+  }
+
+  .memory-scroll-scene__cards {
+    right: 18px;
+    bottom: 8svh;
+    width: calc(100% - 36px);
+  }
+
+  .memory-scroll-scene__next {
+    left: 24px;
+    bottom: 8svh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .memory-scroll-scene {
+    min-height: auto;
+    padding: 96px 24px;
+  }
+
+  .memory-scroll-scene__copy,
+  .memory-scroll-scene__stage,
+  .memory-scroll-scene__cards,
+  .memory-scroll-scene__next {
+    position: relative;
+    inset: auto;
+    transform: none;
+    width: auto;
+    margin: 0 0 56px;
+  }
+}
