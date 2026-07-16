@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1 — Scroll Choreography Upgrade
+## 1.1.0 — Scroll Choreography Upgrade
 
 - Promoted scroll from a secondary animation technique to a mandatory master timeline when the brief requires a cinematic downward journey.
 - Added explicit Trigger, Start, End, Pin, Scrub, normalized progress, mobile distance, and reduced-motion fields.
