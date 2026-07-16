@@ -48,7 +48,7 @@ Skill 本身不需要安装前端依赖。
 ## SHA-256
 
 ```text
-511a9c21559562dc67a6fa60c5c061ba6821543bb3cbbbfc638b34a3e3cbf676
+3761498be6e22ffef9429b3780091f3895dc00e788e495d9692dc3fe306e0be2
 ```
 
 ---
