@@ -2,7 +2,7 @@
 
 这是一个用于生成高级动态网页的双语 Skill 包。
 
-![滚动叙事预览](./assets/scroll-journey-preview.svg)
+![滚动叙事预览](https://github.com/wlxb625/cinematic-web-experience-designer/releases/download/v1.1.0/scroll-journey-preview.png)
 
 ## 它解决什么问题
 
@@ -38,6 +38,16 @@
 ## 关键原则
 
 先导演，后设计；先设计，后编码；先桌面与手机双分镜，再进入实现；每一个重效果都必须有降级方案。
+
+![产品界面预览](https://github.com/wlxb625/cinematic-web-experience-designer/releases/download/v1.1.0/interface-preview.png)
+
+## 下载 Skill
+
+请前往 [v1.1.0 Release](https://github.com/wlxb625/cinematic-web-experience-designer/releases/tag/v1.1.0)，下载：
+
+`cinematic-web-experience-designer-v1.1.0.zip`
+
+不要下载 GitHub 自动生成的 `Source code (zip)` 或 `Source code (tar.gz)`，它们是整个仓库源码，不是精简 Skill 包。
 
 ## 参考代码依赖
 
