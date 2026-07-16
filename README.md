@@ -4,7 +4,7 @@ A bilingual AI skill for designing and implementing cinematic, media-integrated 
 
 > 中文说明：[README.zh-CN.md](./README.zh-CN.md) · 中文 Skill：[SKILL.zh-CN.md](./SKILL.zh-CN.md)
 
-![Scroll-linked cinematic journey preview](./assets/scroll-journey-preview.svg)
+![Scroll-linked cinematic journey preview](https://github.com/wlxb625/cinematic-web-experience-designer/releases/download/v1.1.0/scroll-journey-preview.png)
 
 ## What it solves
 
@@ -81,8 +81,16 @@ npm install gsap @gsap/react
 
 The `Tongxing / 同行` example uses a **memory-growth space** as its visual world. A memory core expands into fragments and a knowledge graph, transforms into a growth timeline, and finally becomes a calm sunrise scene.
 
-![Product interface preview](./assets/interface-preview.svg)
+![Product interface preview](https://github.com/wlxb625/cinematic-web-experience-designer/releases/download/v1.1.0/interface-preview.png)
+
+## Download
+
+Download the compact Skill package from the [v1.1.0 release](https://github.com/wlxb625/cinematic-web-experience-designer/releases/tag/v1.1.0):
+
+`cinematic-web-experience-designer-v1.1.0.zip`
+
+Do not use GitHub's automatically generated “Source code” archives as the Skill package.
 
 ## Version
 
-Current package: **v1.1** — scroll orchestration, media scrubbing, scene continuity, mobile fallbacks, and recording-based QA.
+Current package: **v1.1.0** — scroll orchestration, media scrubbing, scene continuity, mobile fallbacks, and recording-based QA.
