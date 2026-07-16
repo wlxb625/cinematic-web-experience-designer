@@ -2,8 +2,6 @@
 
 这是一个用于生成高级动态网页的双语 Skill 包。
 
-![滚动叙事预览](https://github.com/wlxb625/cinematic-web-experience-designer/releases/download/v1.1.0/scroll-journey-preview.png)
-
 ## 它解决什么问题
 
 普通 AI 前端往往直接从需求跳到组件拼装。本 Skill 在编码前增加视觉导演层，强制定义视觉世界、页面分幕、媒体职责、滚动时间轴、场景交接、移动端重新导演以及性能降级。
@@ -38,8 +36,6 @@
 ## 关键原则
 
 先导演，后设计；先设计，后编码；先桌面与手机双分镜，再进入实现；每一个重效果都必须有降级方案。
-
-![产品界面预览](https://github.com/wlxb625/cinematic-web-experience-designer/releases/download/v1.1.0/interface-preview.png)
 
 ## 下载 Skill
 
