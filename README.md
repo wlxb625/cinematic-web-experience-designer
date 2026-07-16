@@ -4,7 +4,7 @@ A bilingual AI skill for designing and implementing cinematic, media-integrated 
 
 > 中文说明：[README.zh-CN.md](./README.zh-CN.md) · 中文 Skill：[SKILL.zh-CN.md](./SKILL.zh-CN.md)
 
-![Scroll-linked cinematic journey preview](./assets/scroll-journey-preview.png)
+![Scroll-linked cinematic journey preview](./assets/scroll-journey-preview.svg)
 
 ## What it solves
 
@@ -81,7 +81,7 @@ npm install gsap @gsap/react
 
 The `Tongxing / 同行` example uses a **memory-growth space** as its visual world. A memory core expands into fragments and a knowledge graph, transforms into a growth timeline, and finally becomes a calm sunrise scene.
 
-![Product interface preview](./assets/interface-preview.png)
+![Product interface preview](./assets/interface-preview.svg)
 
 ## Version
 
