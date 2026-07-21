@@ -13,6 +13,7 @@
 - `SKILL.md`：英文主 Skill，可用于通用 Agent 或 Codex 工作流。
 - `SKILL.zh-CN.md`：中文完整版本。
 - `templates/visual-brief.*.md`：项目视觉简报。
+- `templates/reference-research.yaml`：React Bits、21st.dev、MotionSites、BentoGrids、Pinterest 等来源的参考调研与采用审查。
 - `templates/scene-spec.yaml`：页面分幕规格。
 - `templates/media-plan.yaml`：图片、视频、3D 和 Shader 媒体规划。
 - `templates/motion-timeline.yaml`：统一动效与滚动编排时间轴，包含 Trigger、Pin、Scrub、媒体同步和场景交接。
@@ -22,32 +23,35 @@
 - `examples/scroll-scene-gsap.tsx`：React + GSAP ScrollTrigger 可运行参考场景。
 - `examples/scroll-scene.css`：参考场景样式。
 
+## 参考调研系统
+
+当前 `main` 分支加入了尚未发布的新参考调研能力。存在网页访问工具时，各来源分工如下：
+
+- React Bits：动效模式。
+- 21st.dev：经过审查的实现候选。
+- MotionSites：完整网站构图和节奏。
+- BentoGrids：模块层级与响应式重排。
+- Pinterest：美术方向和 Moodboard 扩展。
+
+所有采用的参考必须填写到 `templates/reference-research.yaml`，映射到具体场景，并检查依赖、访问权、无障碍、手机端、减少动态模式与性能。只能转化原则，不能照搬页面。
+
 ## 推荐使用顺序
 
 1. 填写 `visual-brief.zh-CN.md`。
-2. 使用 Skill 的概念模式生成三个视觉方向。
-3. 选定方向后填写 `scene-spec.yaml`。
-4. 为所有素材填写 `media-plan.yaml`。
-5. 为重动效场景填写 `motion-timeline.yaml`。
-6. 将规格和 `codex-execution.zh-CN.md` 一起交给 Codex。
-7. Codex 每次只完成一个阶段或一个场景。
-8. 先用占位素材验证滚动原型，再接入正式视频、图片或 WebGL。
-9. 输出 0%、25%、50%、75%、100% 进度截图和桌面/手机滚动录屏。
-10. 使用 `qa-checklist.md` 完成最终验收。
+2. 触发参考调研时，完成 `reference-research.yaml`。
+3. 使用 Skill 的概念模式生成三个视觉方向。
+4. 选定方向后填写 `scene-spec.yaml`。
+5. 为所有素材填写 `media-plan.yaml`。
+6. 为重动效场景填写 `motion-timeline.yaml`。
+7. 将规格和 `codex-execution.zh-CN.md` 一起交给 Codex。
+8. Codex 每次只完成一个阶段或一个场景。
+9. 先用占位素材验证滚动原型，再接入正式视频、图片或 WebGL。
+10. 输出 0%、25%、50%、75%、100% 进度截图和桌面/手机滚动录屏。
+11. 使用 `qa-checklist.md` 完成最终验收。
 
 ## 关键原则
 
 先导演，后设计；先设计，后编码；先桌面与手机双分镜，再进入实现；每一个重效果都必须有降级方案。
-
-![产品界面预览](./assets/interface-preview.png)
-
-## 下载 Skill
-
-请前往 [v1.1.0 Release](https://github.com/wlxb625/cinematic-web-experience-designer/releases/tag/v1.1.0)，下载：
-
-`cinematic-web-experience-designer-v1.1.0.zip`
-
-不要下载 GitHub 自动生成的 `Source code (zip)` 或 `Source code (tar.gz)`，它们是整个仓库源码，不是精简 Skill 包。
 
 ## 参考代码依赖
 

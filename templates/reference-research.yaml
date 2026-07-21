@@ -1,0 +1,51 @@
+reference_research:
+  mode: "required | skipped-with-reason"
+  browsing_available: true
+  skip_reason: ""
+  project_context:
+    product: ""
+    audience: ""
+    desired_emotion: ""
+    content_type: ""
+    target_devices: []
+    current_stack: ""
+  search_queries:
+    - ""
+  sources:
+    - id: ref-01
+      source_role: "motion-pattern | implementation-candidate | full-site-composition | bento-layout | moodboard"
+      platform: "React Bits | 21st.dev | MotionSites | BentoGrids | Pinterest | other"
+      url: ""
+      access_status: "opened | blocked | login-required | user-supplied"
+      observed:
+        composition: ""
+        typography: ""
+        media: ""
+        motion: ""
+        interaction: ""
+        mobile: ""
+        performance: ""
+      relevance: ""
+      transferable_principles: []
+      do_not_copy: []
+      implementation_candidate:
+        use: false
+        target_scene_or_component: ""
+        adaptation_required: ""
+        dependencies: []
+        license_or_access_checked: false
+        accessibility_checked: false
+        reduced_motion_checked: false
+        mobile_checked: false
+        performance_risk: ""
+  synthesis:
+    primary_composition_reference: ""
+    primary_motion_reference: ""
+    primary_material_or_mood_reference: ""
+    accepted_principles: []
+    rejected_patterns: []
+    originality_statement: "Explain how the result differs from every reference."
+    scene_mapping:
+      - scene_id: "scene-01"
+        adopted_principles: []
+        implementation_notes: ""

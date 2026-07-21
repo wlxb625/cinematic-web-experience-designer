@@ -53,11 +53,24 @@ Product diagnosis
 └── templates/
     ├── visual-brief.en.md
     ├── visual-brief.zh-CN.md
+    ├── reference-research.yaml
     ├── scene-spec.yaml
     ├── media-plan.yaml
     ├── motion-timeline.yaml
     └── qa-checklist.md
 ```
+
+## Reference research system
+
+The main branch includes an unreleased reference-research upgrade. When browsing is available, the skill assigns different roles to each source:
+
+- React Bits for motion patterns.
+- 21st.dev for reviewed implementation candidates.
+- MotionSites for full-site composition and pacing.
+- BentoGrids for modular hierarchy and responsive regrouping.
+- Pinterest for broad art direction and moodboards.
+
+Every adopted reference must be documented in `templates/reference-research.yaml`, mapped to a scene, checked for dependencies, access rights, accessibility, mobile behavior, reduced motion, and performance, and transformed rather than copied.
 
 ## Scroll-linked experience requirements
 
@@ -83,14 +96,6 @@ The `Tongxing / 同行` example uses a **memory-growth space** as its visual wor
 
 ![Product interface preview](./assets/interface-preview.png)
 
-## Download
-
-Download the compact Skill package from the [v1.1.0 release](https://github.com/wlxb625/cinematic-web-experience-designer/releases/tag/v1.1.0):
-
-`cinematic-web-experience-designer-v1.1.0.zip`
-
-Do not use GitHub's automatically generated “Source code” archives as the Skill package.
-
 ## Version
 
-Current package: **v1.1.0** — scroll orchestration, media scrubbing, scene continuity, mobile fallbacks, and recording-based QA.
+Current package: **v1.1** — scroll orchestration, media scrubbing, scene continuity, mobile fallbacks, and recording-based QA.
